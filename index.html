@@ -16,6 +16,11 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 <style>
+figure.wide{margin:10px -34px}
+figure.wide img{border-left:0;border-right:0}
+figure.wide figcaption{padding:0 34px}
+figure video{display:block;width:100%;max-width:360px;margin:0 auto;border:2px solid var(--line);background:#fff}
+
 :root{--bg:#fff;--ink:#111;--muted:#666;--line:#111;--soft:#f4f4f0;--pink:#ff2d96;--yellow:#ffe14a;--code:#f4f4f0;
 --f:"NanumSquare","Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif}
 @media (prefers-color-scheme:dark){:root{--bg:#111;--ink:#f2f2ee;--muted:#aaa;--line:#f2f2ee;--soft:#1c1c1a;--code:#1c1c1a;color-scheme:dark}}
@@ -78,16 +83,15 @@ footer a{color:inherit}
 <section>
   <span class="step">1</span>
   <h2>포털에서 볼 항목</h2>
-  <p class="src" style="margin-top:0">어린이집 정보공개포털(info.childcare.go.kr) → 지역·이름 검색 → 어린이집 상세 창. 아래 메뉴 그림의 번호 순서예요. 예시 화면의 어린이집 이름은 ㄱㄴㄷ으로 가렸어요.</p>
-  <figure><img src="img/menu.jpg" alt="포털 상세 창의 메뉴. 1 예·결산 등 회계, 2 영유아 및 교직원, 3 교육·보육과정, 4 기본 현황, 5 안전교육·안전점검에 분홍색 박스" loading="lazy"><figcaption>상세 창 위쪽 메뉴. 1~3이 메인, 4~5는 옵션.</figcaption></figure>
+  <p class="src" style="margin-top:0">어린이집 정보공개포털(info.childcare.go.kr) → 지역·이름 검색 → 어린이집 상세 창. 아래 메뉴 그림의 번호 순서예요.</p>
+  <figure class="wide"><img src="img/menu_wide.jpg" alt="포털 상세 창의 메뉴. 1 예·결산 등 회계, 2 영유아 및 교직원, 3 교육·보육과정, 4 기본 현황, 5 안전교육·안전점검에 분홍색 박스"><figcaption>상세 창 위쪽 메뉴. 1~3이 메인, 4~5는 옵션.</figcaption></figure>
 
   <div class="item">
     <h3><span class="tag">메인 1</span>세출 결산서 <span class="src">(1년 동안 쓴 돈)</span></h3>
     <div class="where">예·결산 등 회계 → 세출 결산서 탭 → 회계년도 2025 → 조회</div>
-    <figure><img src="img/exp_tab.jpg" alt="세출 결산서 탭과 회계년도 선택에 분홍색 박스" loading="lazy"></figure>
+    <figure><video src="vid/s2_expense.mp4" poster="vid/s2_expense.jpg" autoplay loop muted playsinline preload="metadata" aria-label="세출 결산서 탭을 찾고 표를 내려가며 인건비와 보육활동비 구간을 분홍색으로 표시"></video></figure>
     <p><b>볼 곳 두 군데</b></p>
-    <figure><img src="img/exp_staff.jpg" alt="세출 결산서 표의 인건비 구간에 분홍색 박스" loading="lazy"><figcaption>① 인건비(선생님 월급 등)가 전체 중 얼마인지</figcaption></figure>
-    <figure><img src="img/exp_act.jpg" alt="세출 결산서 표의 보육활동비 구간에 분홍색 박스" loading="lazy"><figcaption>② 보육활동비(급식·간식재료비, 교재교구비 등 아이에게 직접 쓰는 돈)</figcaption></figure>
+    <ul><li><b>① 인건비</b>(선생님 월급 등)가 전체 중 얼마인지</li><li><b>② 보육활동비</b>(급식·간식재료비, 교재교구비 등 아이에게 직접 쓰는 돈)</li></ul>
     <ul><li>이름이 뭉뚱그려진 항목(예: 기타운영비)이 큰지도 보세요.</li><li>비중이 높고 낮음이 곧 좋고 나쁨은 아니에요. 국공립·민간·가정 어린이집은 구조가 달라요.</li></ul>
     <table><tr><th>예시 (2025 결산)</th><th>인건비 비중</th><th>보육활동비 비중</th></tr>
     <tr><td>ㄱㄴㄷ</td><td>67.3%</td><td>12.0%</td></tr>
@@ -101,7 +105,7 @@ footer a{color:inherit}
   <div class="item">
     <h3><span class="tag">메인 2</span>교직원 <span class="src">(근속연수)</span></h3>
     <div class="where">영유아 및 교직원 → 아래로 내려서 "보육교사의 현기관 근속연수" 표</div>
-    <figure><img src="img/staff.jpg" alt="보육교사의 현기관 근속연수 표에 분홍색 박스" loading="lazy"></figure>
+    <figure><video src="vid/s3_staff.mp4" poster="vid/s3_staff.jpg" autoplay loop muted playsinline preload="metadata" aria-label="보육교사의 현기관 근속연수 표에 분홍색 박스"></video></figure>
     <ul><li>1년 미만 선생님이 몇 명인지, 오래 일한 선생님이 몇 명인지 보세요. (매년 4월 기준)</li>
     <li>위쪽 표의 급수(1·2급)는 자격 단계 표시예요. 정확한 기준을 끝까지 확인한 건 아니라서 조심스럽지만, "이런 구성이구나" 정도로 가볍게만 참고하세요.</li></ul>
   </div>
@@ -109,7 +113,7 @@ footer a{color:inherit}
   <div class="item">
     <h3><span class="tag">메인 3</span>특별활동</h3>
     <div class="where">교육·보육과정 → 아래로 내려서 "특별활동" 표</div>
-    <figure><img src="img/special.jpg" alt="특별활동 표에 분홍색 박스(업체명 칸은 가림)" loading="lazy"><figcaption>종류 · 주당 횟수 · 1회 시간 · 단가 (업체명 칸은 가렸어요)</figcaption></figure>
+    <figure><video src="vid/s4_special.mp4" poster="vid/s4_special.jpg" autoplay loop muted playsinline preload="metadata" aria-label="특별활동 표에 분홍색 박스(업체명 칸은 가림)"></video><figcaption>종류 · 주당 횟수 · 1회 시간 · 단가 (업체명 칸은 가렸어요)</figcaption></figure>
     <div class="warn">"미운영"이라고 보육만 하는 건 아니에요. 외부 업체 없이 촉감놀이, 미술놀이처럼 자체로 하는 곳도 있어요. 방문 상담 때 여쭤보세요.</div>
   </div>
 
